@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<VendorQueries>
+	<Category>
+		<Name>Employee Overview</Name>
+		<TableName>EMPLOPYEE</TableName>
+		<Query>
+			select * from Employee
+		</Query>
+		<Columns>ID,NAME,STATUS</Columns>
+	</Category>
+	<Category>
+		<Name>Active Employees</Name>
+		<TableName>EMPLOPYEE</TableName>
+		<Query>select * from EMPLOPYEE where status =1</Query>
+		<Columns>ID,NAME,STATUS</Columns>
+	</Category>
+</VendorQueries>
+
